@@ -82,6 +82,22 @@ create_set(fpath1, fpath2, params)
 %  vector of training/testing labels (class numbers) for each instance
 %  of features
 
+% find_nearest(reference, target)
+% Bello, Juan P Code
+% Find indices of nearest values in a reference array to a target array.
+%
+% Parameters
+% ----------
+% reference : R x 1 array
+%  Array of reference values.
+% target : 1 x T array
+%  Array of target values.
+%
+% Returns
+% -------
+% nearest_indices : 1 x T array
+%  Indices of reference values that are nearest to values of target.
+
 predict_labels(train_features, train_labels, test_features)
 % Predict the labels of the test features,
 % given training features and labels,
